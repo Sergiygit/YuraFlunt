@@ -3117,7 +3117,10 @@
                 slidesPerView: 1,
                 spaceBetween: 90,
                 speed: 800,
+                loopAddBlankSlides: true,
                 simulateTouch: false,
+                loop: true,
+                effect: "fade",
                 navigation: {
                     nextEl: ".swiper-button-next"
                 },
@@ -3131,6 +3134,7 @@
                 spaceBetween: 0,
                 touchRatio: 0,
                 speed: 800,
+                loop: true,
                 direction: "vertical",
                 navigation: {
                     nextEl: ".swiper-button-next-mobile"
