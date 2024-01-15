@@ -556,6 +556,14 @@ h6 {
   display: none;
 }
 
+.swiper-button-next {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -770,5 +778,13 @@ h6 {
 @media (max-width: 29.99875em) {
   .reviews__slider {
     height: 480px;
+  }
+}
+
+@media (any-hover: hover) {
+  .swiper-button-next:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
