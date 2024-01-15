@@ -471,7 +471,7 @@ h6 {
   line-height: normal;
   background: #fff;
   margin-bottom: 7px;
-  border-radius: 0px 15px 15px 15px;
+  border-radius: 15px 0px 15px 15px;
 }
 
 @supports (padding-left: clamp( 1.875rem , 1.8279411765rem  +  0.2352941176vw , 2rem )) {
@@ -718,6 +718,13 @@ h6 {
             flex-direction: row-reverse;
   }
 
+  .reviews__top-slide._left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
   .reviews__slider-bottom {
     display: none;
   }
@@ -728,6 +735,24 @@ h6 {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     text-align: right;
+  }
+
+  .reviews__person-block._left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+
+  .reviews__text._left {
+    border-radius: 0px 15px 15px 15px;
+  }
+
+  .reviews__rating._left {
+    -moz-text-align-last: right;
+         text-align-last: right;
   }
 
   .swiper-button-next-mobile {
