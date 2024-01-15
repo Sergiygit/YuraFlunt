@@ -419,23 +419,36 @@ h6 {
 }
 
 .reviews__avatar {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
   margin-bottom: -12px;
   background: #9ED7F4;
   border-radius: 50%;
   border: #fff 3px solid;
+  overflow: hidden;
 }
 
-@supports (width: clamp( 3.75rem , 3.6794117647rem  +  0.3529411765vw , 3.9375rem )) {
+@supports (width: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem )) {
   .reviews__avatar {
-    width: clamp( 3.75rem , 3.6794117647rem  +  0.3529411765vw , 3.9375rem );
+    width: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem );
   }
 }
 
-@supports not (width: clamp( 3.75rem , 3.6794117647rem  +  0.3529411765vw , 3.9375rem )) {
+@supports not (width: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem )) {
   .reviews__avatar {
-    width: calc(3.75rem + 0.1875 * (100vw - 20rem) / 53.125);
+    width: calc(3.75rem + 0.3125 * (100vw - 20rem) / 53.125);
+  }
+}
+
+@supports (height: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem )) {
+  .reviews__avatar {
+    height: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem );
+  }
+}
+
+@supports not (height: clamp( 3.75rem , 3.6323529412rem  +  0.5882352941vw , 4.0625rem )) {
+  .reviews__avatar {
+    height: calc(3.75rem + 0.3125 * (100vw - 20rem) / 53.125);
   }
 }
 
@@ -461,6 +474,7 @@ h6 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.7px;
+  margin-bottom: -15px;
 }
 
 .reviews__text {
@@ -471,7 +485,7 @@ h6 {
   line-height: normal;
   background: #fff;
   margin-bottom: 7px;
-  border-radius: 15px 0px 15px 15px;
+  border-radius: 0px 15px 15px 15px;
 }
 
 @supports (padding-left: clamp( 1.875rem , 1.8279411765rem  +  0.2352941176vw , 2rem )) {
@@ -752,6 +766,10 @@ h6 {
             flex-direction: row;
     -moz-text-align-last: left;
          text-align-last: left;
+  }
+
+  .reviews__text {
+    border-radius: 15px 0px 15px 15px;
   }
 
   .reviews__text._left {
