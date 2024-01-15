@@ -724,38 +724,6 @@ h6 {
     text-align: right;
   }
 
-  .swiper-slide-active .reviews__person-block {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: left;
-  }
-
-  .swiper-slide-active .reviews__top-slide {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .swiper-slide-active .reviews__rating {
-    text-align: right;
-  }
-
-  .swiper-slide-next .reviews__text {
-    border-radius: 15px 0px 15px 15px;
-  }
-
-  .swiper-slide-active {
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
-    -webkit-transform: translateX(-10%) !important;
-        -ms-transform: translateX(-10%) !important;
-            transform: translateX(-10%) !important;
-  }
-
   .swiper-button-next-mobile {
     display: block;
     -webkit-transform: rotate(90deg);
