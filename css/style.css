@@ -444,7 +444,7 @@ h6 {
   font-size: 14px;
   letter-spacing: 0.7px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: normal;
 }
 
@@ -458,7 +458,7 @@ h6 {
 .reviews__job-type {
   font-size: 14px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: normal;
   letter-spacing: 0.7px;
 }
@@ -538,9 +538,9 @@ h6 {
 }
 
 .swiper-slide {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: opacity 0.5s ease 0s;
+  -o-transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s;
   opacity: 0;
 }
 
@@ -696,6 +696,12 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .reviews__slide._left {
+    -webkit-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 
   .reviews__slider-top {
